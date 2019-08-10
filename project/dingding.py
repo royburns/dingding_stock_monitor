@@ -2,10 +2,10 @@ from dingtalkchatbot.chatbot import DingtalkChatbot
 
 class SendMsg:
     def __init__(self):
-        self.webtoken = '20d8558d01a4170b91d5a1254fa08930573925d014366de38411ef38fdd52628'
+        self.webtoken = '****'
 
     def send_msg(self, msg):
-        # https://oapi.dingtalk.com/robot/send?access_token=20d8558d01a4170b91d5a1254fa08930573925d014366de38411ef38fdd52628
+        # https://oapi.dingtalk.com/robot/send?access_token='****'
         webhook = 'https://oapi.dingtalk.com/robot/send?access_token={}'.format(self.webtoken)
 
         bot = DingtalkChatbot(webhook)
