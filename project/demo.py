@@ -25,7 +25,7 @@ class Warning():
 
         if not stock_info:
             print('没有股价信息')
-            return
+            return self.send_msg('没有股价信息')
 
         msg = ''
         now = datetime.now().strftime('%m-%d %H:%M:%S')
@@ -72,3 +72,4 @@ class Warning():
 if __name__ == '__main__':
     warning = Warning()
     warning.monitor()
+    
